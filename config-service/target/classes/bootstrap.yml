@@ -4,10 +4,15 @@ server:
 spring:
   application:
     name: configservice
-
+  profiles:
+    active: dev
   cloud:
     config:
-      service:
+      server:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
+
+user:
+  username: luotong
+  password: 123456
           

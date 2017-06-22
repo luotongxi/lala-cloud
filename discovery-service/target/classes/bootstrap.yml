@@ -1,0 +1,14 @@
+server:
+  port: 16200
+
+spring:
+  application:
+    name: discovery
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://configserver:16100
+
+
+

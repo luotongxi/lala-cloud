@@ -1,0 +1,20 @@
+{
+  "groups": [{
+    "name": "person",
+    "type": "com.tluo.lala.discovery.conf.Person",
+    "sourceType": "com.tluo.lala.discovery.conf.Person"
+  }],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.String",
+      "sourceType": "com.tluo.lala.discovery.conf.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.tluo.lala.discovery.conf.Person"
+    }
+  ],
+  "hints": []
+}
