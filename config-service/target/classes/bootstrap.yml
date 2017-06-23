@@ -1,9 +1,9 @@
 server:
-  port: 16100
+  port: 6701
 
 spring:
   application:
-    name: configservice
+    name: configserver
   profiles:
     active: dev
   cloud:

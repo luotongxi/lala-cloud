@@ -1,11 +1,12 @@
 spring:
   application:
-    name: discovery
+    name: user-service
   profiles:
     active: dev
   cloud:
     config:
       uri: http://configserver:6701
+
 
 
 

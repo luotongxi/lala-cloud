@@ -31,11 +31,20 @@
         <processorPath useClasspath="true" />
         <module name="discovery-service" />
       </profile>
+      <profile default="false" name="Annotation profile for user" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="user" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-service" target="1.8" />
       <module name="discovery-service" target="1.8" />
       <module name="lala-cloud" target="1.8" />
+      <module name="microservice" target="1.8" />
+      <module name="user" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
