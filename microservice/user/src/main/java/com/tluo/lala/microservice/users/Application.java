@@ -4,13 +4,12 @@ import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * Created by luotong on 2017/6/23.
  */
 @SpringBootApplication
-@EnableEurekaClient
+@EnableDiscoveryClient
 public class Application {
     private static Logger logger = Logger.getLogger(Application.class);
 

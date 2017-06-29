@@ -12,6 +12,12 @@ spring:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
 
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
 # configserver配置服务，注册到服务中心
 eureka:
   instance:
@@ -20,6 +26,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
+
+management:
+  security:
+     enabled: false
 
 user:
   username: luotong
