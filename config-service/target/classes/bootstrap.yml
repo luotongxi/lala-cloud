@@ -12,6 +12,15 @@ spring:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
 
+# configserver配置服务，注册到服务中心
+eureka:
+  instance:
+    hostname: configserver
+    perferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:6702/eureka/
+
 user:
   username: luotong
   password: 123456
