@@ -45,12 +45,20 @@
         <processorPath useClasspath="true" />
         <module name="users" />
       </profile>
+      <profile default="false" name="Annotation profile for ribbon-consumer" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ribbon-consumer" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-service" target="1.8" />
       <module name="discovery-service" target="1.8" />
       <module name="lala-cloud" target="1.8" />
       <module name="microservice" target="1.8" />
+      <module name="ribbon-consumer" target="1.8" />
       <module name="user" target="1.8" />
       <module name="users" target="1.8" />
     </bytecodeTargetLevel>

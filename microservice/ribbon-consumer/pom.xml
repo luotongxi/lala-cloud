@@ -3,25 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>lala-cloud</artifactId>
+        <artifactId>microservice</artifactId>
         <groupId>com.tluo.lala</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>microservice</artifactId>
-    <packaging>pom</packaging>
-    <name>lala-cloud-microservice</name>
-
-    <modules>
-        <module>user</module>
-        <module>ribbon-consumer</module>
-    </modules>
-
+    <artifactId>ribbon-consumer</artifactId>
+    <packaging>jar</packaging>
+    <name>lala-cloud-ribbon-consumer</name>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
         </dependency>
     </dependencies>
 

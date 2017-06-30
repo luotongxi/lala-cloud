@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/discovery-service/discovery-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/lala-cloud.iml" filepath="$PROJECT_DIR$/lala-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice/microservice.iml" filepath="$PROJECT_DIR$/microservice/microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/microservice/ribbon-consumer/ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservice/user/users.iml" filepath="$PROJECT_DIR$/microservice/user/users.iml" />
     </modules>
   </component>

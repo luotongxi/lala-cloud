@@ -12,6 +12,7 @@ spring:
         git:
           uri: https://github.com/luotongxi/lala-cloud-config.git
 
+#spring cloud bus 消息总线，利用消息队列来实现配置文件更新的通知，此处，使用rabbitmq，（没有成功）
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -26,10 +27,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
-
-management:
-  security:
-     enabled: false
 
 user:
   username: luotong
