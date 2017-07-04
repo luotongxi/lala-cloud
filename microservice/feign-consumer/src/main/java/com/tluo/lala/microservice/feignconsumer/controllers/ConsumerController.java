@@ -1,22 +1,22 @@
-package com.tluo.lala.microservice.controller;
+package com.tluo.lala.microservice.feignconsumer.controllers;
 
+import com.tluo.lala.microservice.feignconsumer.feign.UserClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 /**
- * Created by edz on 2017/6/30.
+ * Created by edz on 2017/7/4.
  */
 @RestController
 public class ConsumerController {
 
     @Autowired
-    private RestTemplate restTemplate;
+    private UserClient userClient;
 
-    @RequestMapping(value = "/ribbon/user",method = RequestMethod.GET)
+    @RequestMapping(value = "/feign/user/name",method = RequestMethod.GET)
     public String getUser(){
-        return restTemplate.getForEntity("http://user-service:6703/user/name",String.class).getBody();
+        return userClient.getUser();
     }
 }

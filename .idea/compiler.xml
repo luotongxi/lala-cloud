@@ -52,10 +52,18 @@
         <processorPath useClasspath="true" />
         <module name="ribbon-consumer" />
       </profile>
+      <profile default="false" name="Annotation profile for feign-consumer" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="feign-consumer" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-service" target="1.8" />
       <module name="discovery-service" target="1.8" />
+      <module name="feign-consumer" target="1.8" />
       <module name="lala-cloud" target="1.8" />
       <module name="microservice" target="1.8" />
       <module name="ribbon-consumer" target="1.8" />
