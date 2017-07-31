@@ -20,6 +20,7 @@
         <project.version>1.0-SNAPSHOT</project.version>
         <spring.boot.version>1.4.3.RELEASE</spring.boot.version>
         <lombok.version>1.14.4</lombok.version>
+        <springfox.version>2.7.0</springfox.version>
     </properties>
 
     <dependencies>
@@ -74,6 +75,17 @@
                 <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- swagger2 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

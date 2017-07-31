@@ -18,9 +18,12 @@ eureka:
   instance:
     hostname: user-service
     perferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${spring.application.name}:${random.int}
   client:
     serviceUrl:
       defaultZone: http://discovery:6702/eureka/
+    healthcheck:
+      enable: true
 
 
 
