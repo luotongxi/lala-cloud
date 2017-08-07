@@ -19,4 +19,10 @@ public class ConsumerController {
     public String getUser(){
         return userClient.getUser();
     }
+
+    @RequestMapping(value = "/feign",method = RequestMethod.GET)
+    public String get(){
+        return "feign consumer";
+    }
+
 }
