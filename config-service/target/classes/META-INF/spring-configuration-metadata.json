@@ -6,6 +6,12 @@
   }],
   "properties": [
     {
+      "name": "user.id",
+      "type": "java.lang.Long",
+      "sourceType": "com.tluo.lala.config.conf.User",
+      "defaultValue": 0
+    },
+    {
       "name": "user.password",
       "type": "java.lang.String",
       "sourceType": "com.tluo.lala.config.conf.User"

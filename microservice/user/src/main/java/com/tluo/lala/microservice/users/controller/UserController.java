@@ -31,8 +31,8 @@ public class UserController {
         return this.uname;
     }
 
-    @RequestMapping(value = "/{userId}",method = RequestMethod.GET)
-    public User findById(@PathVariable("userId") long userId){
-        return userService.findById(userId);
+    @RequestMapping(value = "/{id}",method = RequestMethod.GET)
+    public User find(@PathVariable("id") long id){
+        return userService.findById(id);
     }
 }

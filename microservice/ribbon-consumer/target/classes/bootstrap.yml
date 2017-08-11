@@ -5,22 +5,25 @@ spring:
     active: dev
   cloud:
     config:
-      discovery:
-        #开启Config服务发现支持
-        enabled: true
-        #指定config server端的name，即：spring.application.name，从服务列表发现配置服务，读取配置
-        serviceId: configserver
+      uri: http://configserver:6701  # 直接通过访问cofigserver的地址，读取配置中心的配置
+
+
+#      discovery:
+#        #开启Config服务发现支持
+#        enabled: true
+#        #指定config server端的name，即：spring.application.name，从服务列表发现配置服务，读取配置
+#        serviceId: configserver
 
 
 #首先把user-service服务注册到注册中心，才能调用configserver配置服务，读取user-service配置文件，必须放到bootstrap.yml的配置中
 #bootstrap.yml要比application.yml先加载
-eureka:
-  instance:
-    hostname: ribbon-consumer
-    perferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://discovery:6702/eureka/
+#eureka:
+#  instance:
+#    hostname: ribbon-consumer
+#    perferIpAddress: true
+#  client:
+#    serviceUrl:
+#      defaultZone: http://discovery:6702/eureka/
 
 
 

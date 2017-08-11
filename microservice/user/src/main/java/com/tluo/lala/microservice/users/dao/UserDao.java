@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface UserDao {
-    User findById(@Param("userId") long userId);
+    User findById(@Param("id") long id);
 }

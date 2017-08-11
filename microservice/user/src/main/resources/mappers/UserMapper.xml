@@ -3,7 +3,7 @@
 <mapper namespace="com.tluo.lala.microservice.users.dao.UserDao">
 
     <select id="findById" parameterType="long" resultType="User">
-        SELECT user_id,username,mobile FROM user WHERE user_id = #{userId}
+        SELECT * FROM user WHERE id = #{id}
     </select>
 
 </mapper>

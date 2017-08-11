@@ -24,7 +24,7 @@ public class UserTest {
     public void testFindUser() {
         User user = userDao.findById(826920);
         if (user != null) {
-            System.out.println(user.getUserId() + user.getUsername() + user.getMobile());
+            System.out.println(user.getId() + user.getUsername() + user.getMobile());
         } else {
             System.out.println("spring boot can not connection mysql and not find user");
         }

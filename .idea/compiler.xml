@@ -66,8 +66,16 @@
         <processorPath useClasspath="true" />
         <module name="gateway-service" />
       </profile>
+      <profile default="false" name="Annotation profile for commons" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="commons" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="commons" target="1.8" />
       <module name="config-service" target="1.8" />
       <module name="discovery-service" target="1.8" />
       <module name="feign-consumer" target="1.8" />
