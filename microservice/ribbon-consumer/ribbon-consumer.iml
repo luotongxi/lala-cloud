@@ -54,6 +54,7 @@
     <orderEntry type="library" name="Maven: com.netflix.ribbon:ribbon-loadbalancer:2.2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.netflix.netflix-commons:netflix-statistics:0.1.1" level="project" />
     <orderEntry type="library" name="Maven: io.reactivex:rxjava:1.1.10" level="project" />
+    <orderEntry type="module" module-name="commons" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-eureka:1.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:1.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.eureka:eureka-client:1.4.12" level="project" />

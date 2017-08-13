@@ -1,15 +1,14 @@
 package com.tluo.lala.microservice.users.controller;
 
 import com.tluo.lala.microservice.users.domain.User;
-import com.tluo.lala.microservice.users.service.UserService;
+import com.tluo.lala.microservice.users.service.UserApiService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * Created by edz on 2017/6/23.
@@ -17,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 @RefreshScope //使用该注解的类，会在接到SpringCloud配置中心配置刷新的时候，自动将新的配置更新到该类对应的字段中。
-public class UserController {
+public class UserApiController {
 
     @Autowired
-    private UserService userService;
+    private UserApiService userApiService;
 
     @Value("${user.name}")
     private String uname;
@@ -33,6 +32,16 @@ public class UserController {
 
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public User find(@PathVariable("id") long id){
-        return userService.findById(id);
+        return userApiService.findById(id);
+    }
+
+    @RequestMapping(value = "",method = RequestMethod.POST)
+    public long save(@RequestBody User user){
+        return userApiService.save(user);
+    }
+
+    @RequestMapping(value = "",method = RequestMethod.GET)
+    public List<User> list(){
+        return userApiService.findAll();
     }
 }

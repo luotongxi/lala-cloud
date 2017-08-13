@@ -17,12 +17,27 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.abandon-when-percentage-full",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.access-to-underlying-connection-allowed",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
       "name": "spring.datasource.access-to-underlying-connection-allowed",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.access-to-underlying-connection-allowed",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.alternate-username-allowed",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -47,6 +62,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.commit-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.connection-properties",
       "type": "java.lang.String",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -54,6 +74,16 @@
     {
       "name": "spring.datasource.connection-properties",
       "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.connection-properties",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.data-source",
+      "type": "java.lang.Object",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -77,6 +107,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.data-source-j-n-d-i",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.db-properties",
       "type": "java.util.Properties",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -84,6 +119,16 @@
     {
       "name": "spring.datasource.db-properties",
       "type": "java.util.Properties",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.db-properties",
+      "type": "java.util.Properties",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-auto-commit",
+      "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -107,6 +152,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.default-catalog",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.default-read-only",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -114,6 +164,16 @@
     {
       "name": "spring.datasource.default-read-only",
       "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.default-transaction-isolation",
+      "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -137,12 +197,27 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.fair-queue",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
       "name": "spring.datasource.fair-queue",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.fair-queue",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.ignore-exception-on-pre-load",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -167,6 +242,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.init-s-q-l",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.initial-size",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -174,6 +254,16 @@
     {
       "name": "spring.datasource.initial-size",
       "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.jdbc-interceptors",
+      "type": "java.lang.String",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -193,6 +283,16 @@
     },
     {
       "name": "spring.datasource.jmx-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.jmx-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.log-abandoned",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -217,12 +317,27 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.log-validation-errors",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.login-timeout",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
       "name": "spring.datasource.login-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.login-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-active",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -247,12 +362,27 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.max-age",
+      "type": "java.lang.Long",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.max-idle",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
       "name": "spring.datasource.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.max-wait",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -277,6 +407,16 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.min-evictable-idle-time-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.min-idle",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -297,6 +437,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.name",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.num-tests-per-eviction-run",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -304,6 +449,16 @@
     {
       "name": "spring.datasource.num-tests-per-eviction-run",
       "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.num-tests-per-eviction-run",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -323,6 +478,16 @@
     },
     {
       "name": "spring.datasource.propagate-interrupt-state",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.propagate-interrupt-state",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.remove-abandoned",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -347,6 +512,16 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.remove-abandoned-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.rollback-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.rollback-on-return",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -367,12 +542,27 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.suspect-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.test-on-borrow",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
       "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-on-connect",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -397,6 +587,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.test-while-idle",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -404,6 +599,16 @@
     {
       "name": "spring.datasource.test-while-idle",
       "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.time-between-eviction-runs-millis",
+      "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -427,12 +632,27 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.use-disposable-connection-facade",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
       "name": "spring.datasource.use-disposable-connection-facade",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.use-disposable-connection-facade",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.use-equals",
       "type": "java.lang.Boolean",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
@@ -457,6 +677,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.use-lock",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.username",
       "type": "java.lang.String",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -464,6 +689,16 @@
     {
       "name": "spring.datasource.username",
       "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.validation-interval",
+      "type": "java.lang.Long",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
@@ -487,6 +722,11 @@
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {
+      "name": "spring.datasource.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
       "name": "spring.datasource.validation-query-timeout",
       "type": "java.lang.Integer",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
@@ -494,6 +734,16 @@
     {
       "name": "spring.datasource.validation-query-timeout",
       "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.validation-query-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
+    },
+    {
+      "name": "spring.datasource.validator-class-name",
+      "type": "java.lang.String",
       "sourceType": "org.apache.tomcat.jdbc.pool.DataSource"
     },
     {

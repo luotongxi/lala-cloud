@@ -20,6 +20,12 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.tluo.lala</groupId>
+            <artifactId>commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <!--服务注册配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

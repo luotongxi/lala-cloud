@@ -50,14 +50,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="ribbon-consumer" />
       </profile>
       <profile default="false" name="Annotation profile for feign-consumer" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="feign-consumer" />
       </profile>
       <profile default="false" name="Annotation profile for gateway-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
