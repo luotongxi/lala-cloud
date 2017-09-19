@@ -1,5 +1,6 @@
 package com.tluo.lala.microservice.users.controller;
 
+import com.tluo.lala.commons.object.R;
 import com.tluo.lala.microservice.users.domain.User;
 import com.tluo.lala.microservice.users.service.UserApiService;
 import io.swagger.annotations.ApiOperation;
@@ -36,8 +37,14 @@ public class UserApiController {
     }
 
     @RequestMapping(value = "",method = RequestMethod.POST)
-    public long save(@RequestBody User user){
-        return userApiService.save(user);
+    @ApiOperation(value = "注册用户", notes = "注册用户")
+    public R save(@RequestBody User user){
+        User u = userApiService.findByUserName(user.getUsername());
+        if (u != null) {
+            return R.error("用户名已存在");
+        }
+        userApiService.registry(user);
+        return R.ok();
     }
 
     @RequestMapping(value = "",method = RequestMethod.GET)

@@ -9,12 +9,23 @@
         (#{username},#{password},#{name},#{mobile},#{gender},#{age},#{address},#{hobby})
     </insert>
 
+    <insert id="registry" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into user
+        (username,password)
+        values
+        (#{username},#{password})
+    </insert>
+
     <select id="findById" parameterType="long" resultType="User">
         SELECT * FROM user WHERE id = #{id}
     </select>
 
     <select id="findAll" resultType="User">
         select * from user
+    </select>
+
+    <select id="findByUserName" parameterType="String" resultType="User">
+        select * from user where username = #{username}
     </select>
 
 </mapper>

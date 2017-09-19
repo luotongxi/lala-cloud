@@ -11,4 +11,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserDao extends BaseDao{
     User findById(@Param("id") long id);
+
+    User findByUserName(@Param("username") String username);
+
+    long registry(User user);
 }

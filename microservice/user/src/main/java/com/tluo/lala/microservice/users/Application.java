@@ -5,6 +5,8 @@ import org.apache.log4j.Logger;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
+import org.mybatis.spring.mapper.MapperScannerConfigurer;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -12,6 +14,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.stereotype.Repository;
 
 
 /**
@@ -35,7 +38,8 @@ public class Application {
     /**
      * 生成SqlSessionFactory
      */
-    @Bean
+    @Bean(name = "sqlSessionFactory")
+    @Qualifier("sqlSessionFactory")
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource());
@@ -43,6 +47,16 @@ public class Application {
         sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath:/mappers/*.xml"));
         return sqlSessionFactoryBean.getObject();
     }
+
+
+//    @Bean
+//    public MapperScannerConfigurer mapperScannerConfigurer(){
+//        MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
+//        mapperScannerConfigurer.setBasePackage("com.tluo");
+//        mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
+//        mapperScannerConfigurer.setAnnotationClass(Repository.class);
+//        return mapperScannerConfigurer;
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

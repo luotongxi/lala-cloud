@@ -31,4 +31,12 @@ public class UserApiService extends BaseApiService<User>{
         }
         return 0;
     }
+
+    public User findByUserName(String username){
+        return userDao.findByUserName(username);
+    }
+
+    public long registry(User user) {
+        return userDao.registry(user);
+    }
 }
