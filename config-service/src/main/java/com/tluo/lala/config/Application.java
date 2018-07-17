@@ -17,7 +17,7 @@ public class Application {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
-        logger.info("============= LaLa Config Service Start Success =============");
+        logger.info("============= Aixi Config Service Start Success =============");
     }
 
 }

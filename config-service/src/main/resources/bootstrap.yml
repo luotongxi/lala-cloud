@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: configserver
-  profiles:
-    active: dev
   cloud:
     config:
       server:
@@ -13,22 +11,18 @@ spring:
           uri: https://github.com/luotongxi/lala-cloud-config.git
 
 #spring cloud bus 消息总线，利用消息队列来实现配置文件更新的通知，此处，使用rabbitmq，（没有成功）
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
 
-# configserver配置服务，注册到服务中心
-eureka:
-  instance:
-    hostname: configserver
-    perferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://discovery:6702/eureka/
-
-user:
-  username: luotong
-  password: 123456
+# configServer配置服务，注册到服务中心
+#eureka:
+#  instance:
+#    hostname: configserver
+#    perferIpAddress: true
+#  client:
+#    serviceUrl:
+#      defaultZone: http://discovery:6702/eureka/
           
