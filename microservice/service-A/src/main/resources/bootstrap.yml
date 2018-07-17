@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: service-A
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://configserver:6701  # 直接通过访问cofigserver的地址，读取配置中心的配置
+
+
+
