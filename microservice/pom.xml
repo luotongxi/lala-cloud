@@ -10,11 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>microservice</artifactId>
     <packaging>pom</packaging>
-    <name>aixi-cloud-microservice</name>
+    <name>microservice</name>
 
     <modules>
-        <module>user</module>
-        <module>eureka-client1</module>
+        <module>service-A</module>
     </modules>
 
 

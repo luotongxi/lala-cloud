@@ -11,7 +11,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  */
 @SpringBootApplication
 @EnableConfigServer
-@EnableDiscoveryClient
 public class Application {
     private static Logger logger = Logger.getLogger(Application.class);
 

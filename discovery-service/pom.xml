@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>discovery-service</artifactId>
-    <name>aixi-cloud-discovery-service</name>
+    <name>discovery-service</name>
 
     <dependencies>
         <dependency>

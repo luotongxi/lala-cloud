@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>gateway-service</artifactId>
     <packaging>jar</packaging>
-    <name>aixi-cloud-gateway-service</name>
+    <name>gateway-service</name>
 
     <dependencies>
         <dependency>
@@ -28,6 +28,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-netflix-eureka-server</artifactId>
